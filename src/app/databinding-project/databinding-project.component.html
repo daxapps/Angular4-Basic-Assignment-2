@@ -1,0 +1,13 @@
+<p>
+  databinding-project works!
+</p>
+<p>Username: {{ username }}</p>
+<input 
+	type="text" 
+	class="form-control"
+	[(ngModel)]="username">
+<button 
+	class="btn btn-primary"
+	[disabled]="username === ''"
+	(click)="username = ''">Reset</button>
+
